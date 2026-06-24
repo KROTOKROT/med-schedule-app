@@ -23,7 +23,7 @@ public class MedicationService {
         return repository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Medication not found"));
     }
-
+    
     public Medication save(Medication medication) {
         return repository.save(medication);
     }
